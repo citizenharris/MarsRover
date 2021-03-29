@@ -25,7 +25,7 @@ public class MarsRover {
         return positionToString();
     }
 
-    private void move(Direction heading) {
+    private void move(Compass heading) {
         var newPosition = thrusters.engage(currentPosition, heading);
         isObstructed = newPosition.equals(currentPosition);
         currentPosition = newPosition;
@@ -43,5 +43,6 @@ public class MarsRover {
 
     private String calculatePosition() {
         return currentPosition.toString() + ":" + navigator.getHeading();
+        // What if an obstacled grid point was just a grid point? then you could just return toString and it just does it
     }
 }

@@ -10,9 +10,10 @@ com/codurance/marsrover/PropulsionEngine.java
  com.codurance.marsrover.PropulsionEngine
 com/codurance/marsrover/DirectionFinder.java
  com.codurance.marsrover.DirectionFinder
-com/codurance/marsrover/CombustionEngine.java
- com.codurance.marsrover.CombustionEngine
-com/codurance/marsrover/MarsRover.java
- com.codurance.marsrover.MarsRover
 com/codurance/marsrover/MapSetup.java
  com.codurance.marsrover.MapSetup
+com/codurance/marsrover/MarsRover.java
+ com.codurance.marsrover.MarsRover
+com/codurance/marsrover/CombustionEngine.java
+ com.codurance.marsrover.CombustionEngine
+ com.codurance.marsrover.CombustionEngine$VectorFunction

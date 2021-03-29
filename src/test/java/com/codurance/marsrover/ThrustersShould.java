@@ -22,24 +22,24 @@ class ThrustersShould {
     @Test
     void move_north() {
         var expectedPosition = new GridPoint(0, 1);
-        assertEquals(expectedPosition, thrusters.engage(currentPosition, Direction.NORTH));
+        assertEquals(expectedPosition, thrusters.engage(currentPosition, Compass.NORTH));
     }
 
     @Test
     void move_east() {
         var expectedPosition = new GridPoint(1, 0);
-        assertEquals(expectedPosition, thrusters.engage(currentPosition, Direction.EAST));
+        assertEquals(expectedPosition, thrusters.engage(currentPosition, Compass.EAST));
     }
 
     @Test
     void move_south() {
         var expectedPosition = new GridPoint(0, 9);
-        assertEquals(expectedPosition, thrusters.engage(currentPosition, Direction.SOUTH));
+        assertEquals(expectedPosition, thrusters.engage(currentPosition, Compass.SOUTH));
     }
 
     @Test
     void move_west() {
         var expectedPosition = new GridPoint(9, 0);
-        assertEquals(expectedPosition, thrusters.engage(currentPosition, Direction.WEST));
+        assertEquals(expectedPosition, thrusters.engage(currentPosition, Compass.WEST));
     }
 }

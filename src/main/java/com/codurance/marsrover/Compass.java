@@ -1,19 +1,19 @@
 package com.codurance.marsrover;
 
-public enum Direction {
+public enum Compass {
     NORTH("N"),
     EAST("E"),
     SOUTH("S"),
     WEST("W");
 
-    private final String heading;
+    private final String direction;
 
-    Direction(String heading) {
-        this.heading = heading;
+    Compass(String direction) {
+        this.direction = direction;
     }
 
     @Override
     public String toString() {
-        return heading;
+        return direction;
     }
 }

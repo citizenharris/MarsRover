@@ -21,9 +21,11 @@ j
 :src/test/java/com/codurance/marsrover/NavigatorShould.java,c/6/c643413645a9da5c3d786f2949fed5dcd1c34419
 k
 ;src/main/java/com/codurance/marsrover/NavigationSystem.java,9/1/918699412948e34b7ceb62e3bdf4d280229778c8
-a
-1src/main/java/com/codurance/marsrover/SatNav.java,8/4/8499503835f5062754cbfb667d7d59915d8fbdfd
 j
 :src/test/java/com/codurance/marsrover/ThrustersShould.java,7/e/7e93c3e3587d10752fcfe49ff5434ea5de8d936f
 k
 ;src/main/java/com/codurance/marsrover/CombustionEngine.java,e/7/e7f21c2a848b1928cdb69fbb80b50d174072bc26
+`
+0src/main/java/com/codurance/marsrover/Radar.java,c/2/c21c1f4f162963f2b7af7c03fc738d7d9296f9c4
+c
+3src/main/java/com/codurance/marsrover/MapSetup.java,7/9/7981b73bd9f4631e9ce93e63aa47c8a8f8391c83

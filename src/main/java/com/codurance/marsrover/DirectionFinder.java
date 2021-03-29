@@ -3,26 +3,26 @@ package com.codurance.marsrover;
 import java.util.Map;
 
 public class DirectionFinder {
-    private final Map<Direction, Direction> leftMap;
-    private final Map<Direction, Direction> rightMap;
+    private final Map<Compass, Compass> leftMap;
+    private final Map<Compass, Compass> rightMap;
 
     DirectionFinder() {
         this.leftMap = Map.of(
-                Direction.NORTH, Direction.WEST,
-                Direction.WEST, Direction.SOUTH,
-                Direction.SOUTH, Direction.EAST,
-                Direction.EAST, Direction.NORTH
+                Compass.NORTH, Compass.WEST,
+                Compass.WEST, Compass.SOUTH,
+                Compass.SOUTH, Compass.EAST,
+                Compass.EAST, Compass.NORTH
         );
 
         this.rightMap = Map.of(
-                Direction.NORTH, Direction.EAST,
-                Direction.EAST, Direction.SOUTH,
-                Direction.SOUTH, Direction.WEST,
-                Direction.WEST, Direction.NORTH
+                Compass.NORTH, Compass.EAST,
+                Compass.EAST, Compass.SOUTH,
+                Compass.SOUTH, Compass.WEST,
+                Compass.WEST, Compass.NORTH
         );
     }
 
-    public Direction getLeft(Direction direction) { return leftMap.get(direction); }
+    public Compass getLeft(Compass direction) { return leftMap.get(direction); }
 
-    public Direction getRight(Direction direction) { return rightMap.get(direction); }
+    public Compass getRight(Compass direction) { return rightMap.get(direction); }
 }

@@ -14,7 +14,7 @@ class NavigatorShould {
 
     @BeforeEach
     void setUp() {
-        northFacingRadar = new Radar(Direction.NORTH);
+        northFacingRadar = new Radar(Compass.NORTH);
     }
 
     @ParameterizedTest
@@ -24,7 +24,7 @@ class NavigatorShould {
             "EAST, 3",
             "NORTH, 4"
     })
-    void turn_left_from_north(Direction expectedDirection, int turns) {
+    void turn_left_from_north(Compass expectedDirection, int turns) {
         turn(LEFT, turns, northFacingRadar);
         assertEquals(expectedDirection, northFacingRadar.getHeading());
     }
@@ -36,8 +36,8 @@ class NavigatorShould {
             "WEST, 3",
             "SOUTH, 4"
     })
-    void turn_left_from_south(Direction expectedDirection, int turns) {
-        var southFacingNavigator = new Radar(Direction.SOUTH);
+    void turn_left_from_south(Compass expectedDirection, int turns) {
+        var southFacingNavigator = new Radar(Compass.SOUTH);
         turn(LEFT, turns, southFacingNavigator);
         assertEquals(expectedDirection, southFacingNavigator.getHeading());
     }
@@ -49,7 +49,7 @@ class NavigatorShould {
             "WEST, 3",
             "NORTH, 4"
     })
-    void turn_right_from_north(Direction expectedDirection, int turns) {
+    void turn_right_from_north(Compass expectedDirection, int turns) {
         turn(RIGHT, turns, northFacingRadar);
         assertEquals(expectedDirection, northFacingRadar.getHeading());
     }
@@ -61,8 +61,8 @@ class NavigatorShould {
             "EAST, 3",
             "SOUTH, 4"
     })
-    void turn_right_from_south(Direction expectedDirection, int turns) {
-        var southFacingNavigator = new Radar(Direction.SOUTH);
+    void turn_right_from_south(Compass expectedDirection, int turns) {
+        var southFacingNavigator = new Radar(Compass.SOUTH);
         turn(RIGHT, turns, southFacingNavigator);
         assertEquals(expectedDirection, southFacingNavigator.getHeading());
     }

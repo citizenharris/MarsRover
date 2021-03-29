@@ -6,7 +6,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import static java.util.Arrays.asList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -20,7 +19,7 @@ class RoverShould {
     void setUp() {
         var initialPosition = new GridPoint(0, 0);
         var obstacles = new ArrayList<GridPoint>();
-        var mapSetup = new MapSetup(Direction.NORTH, 10, initialPosition, obstacles);
+        var mapSetup = new MapSetup(Compass.NORTH, 10, initialPosition, obstacles);
         rover = new MarsRover(mapSetup);
     }
 
@@ -110,7 +109,7 @@ class RoverShould {
                 new GridPoint(3, 0)
         );
         var initialPosition = new GridPoint(0, 0);
-        var mapSetup = new MapSetup(Direction.NORTH, 10, initialPosition, obstacles);
+        var mapSetup = new MapSetup(Compass.NORTH, 10, initialPosition, obstacles);
         var obstructedRover = new MarsRover(mapSetup);
 
         assertEquals(expectedPosition, obstructedRover.execute(commands));

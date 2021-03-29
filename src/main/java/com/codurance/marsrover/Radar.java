@@ -4,9 +4,9 @@ public class Radar implements NavigationSystem {
     private static final char LEFT = 'L';
     public static final char RIGHT = 'R';
     private final DirectionFinder directionFinder;
-    private Direction heading;
+    private Compass heading;
 
-    public Radar(Direction heading) {
+    public Radar(Compass heading) {
         this.heading = heading;
         directionFinder = new DirectionFinder();
     }
@@ -27,7 +27,7 @@ public class Radar implements NavigationSystem {
         heading = directionFinder.getLeft(heading);
     }
 
-    public Direction getHeading() {
+    public Compass getHeading() {
         return heading;
     }
 }

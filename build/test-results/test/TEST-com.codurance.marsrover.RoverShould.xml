@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.codurance.marsrover.RoverShould" tests="31" skipped="0" failures="0" errors="0" timestamp="2021-03-26T10:34:41" hostname="codurances-MacBook-Pro.local" time="0.341">
+<testsuite name="com.codurance.marsrover.RoverShould" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-27T20:41:58" hostname="codurances-MacBook-Pro.local" time="0.143">
   <properties/>
-  <testcase name="[1] 0:1:N, M" classname="com.codurance.marsrover.RoverShould" time="0.106"/>
-  <testcase name="[2] 0:2:N, MM" classname="com.codurance.marsrover.RoverShould" time="0.005"/>
-  <testcase name="[3] 0:4:N, MMMM" classname="com.codurance.marsrover.RoverShould" time="0.003"/>
-  <testcase name="[4] 0:9:N, MMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.005"/>
-  <testcase name="[5] 0:0:N, MMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.01"/>
-  <testcase name="[1] 0:9:S, RRM" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[2] 0:8:S, RRMM" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[3] 0:6:S, RRMMMM" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[4] 0:1:S, RRMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[5] 0:0:S, RRMMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[1] 0:0:W, L" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[2] 0:0:S, LL" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[3] 0:0:E, LLL" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[4] 0:0:N, LLLL" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[1] 0:0:E, R" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[2] 0:0:S, RR" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[3] 0:0:W, RRR" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[4] 0:0:N, RRRR" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[1] 1:0:E, RM" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[2] 2:0:E, RMM" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[3] 4:0:E, RMMMM" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[4] 9:0:E, RMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.001"/>
-  <testcase name="[5] 0:0:E, RMMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[1] 9:0:W, LM" classname="com.codurance.marsrover.RoverShould" time="0.003"/>
-  <testcase name="[2] 8:0:W, LMM" classname="com.codurance.marsrover.RoverShould" time="0.006"/>
-  <testcase name="[3] 6:0:W, LMMMM" classname="com.codurance.marsrover.RoverShould" time="0.004"/>
-  <testcase name="[4] 1:0:W, LMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.003"/>
-  <testcase name="[5] 0:0:W, LMMMMMMMMMM" classname="com.codurance.marsrover.RoverShould" time="0.004"/>
-  <testcase name="start_at_0_0_N()" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
-  <testcase name="[1] O:0:3:N, MMMM" classname="com.codurance.marsrover.RoverShould" time="0.01"/>
-  <testcase name="[2] O:2:0:E, RMMM" classname="com.codurance.marsrover.RoverShould" time="0.002"/>
+  <testcase name="follow_a_complicated_route()" classname="com.codurance.marsrover.RoverShould" time="0.143"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
