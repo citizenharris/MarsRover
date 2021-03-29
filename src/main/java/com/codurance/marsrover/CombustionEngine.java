@@ -2,6 +2,7 @@ package com.codurance.marsrover;
 
 import java.util.List;
 import java.util.Map;
+import java.util.function.BiFunction;
 
 class CombustionEngine implements PropulsionEngine {
     private final int maximumGridSize;
@@ -22,7 +23,7 @@ class CombustionEngine implements PropulsionEngine {
 
     public GridPoint engage(GridPoint currentPosition, Compass heading) {
         var updatePosition = getPossibleMoveFor(heading);
-        return updatePosition.engage(currentPosition, heading);
+        return updatePosition.apply(currentPosition, heading);
     }
 
     private VectorFunction getPossibleMoveFor(Compass heading) {
@@ -56,7 +57,6 @@ class CombustionEngine implements PropulsionEngine {
     }
 
     @FunctionalInterface
-    interface VectorFunction {
-        GridPoint engage(GridPoint currentPosition, Compass heading);
+    interface VectorFunction extends BiFunction<GridPoint, Compass, GridPoint> {
     }
 }
