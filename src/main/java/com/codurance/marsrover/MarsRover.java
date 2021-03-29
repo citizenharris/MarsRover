@@ -5,7 +5,6 @@ public class MarsRover {
     private final NavigationSystem navigator;
     private final PropulsionEngine thrusters;
     private GridPoint currentPosition;
-    private boolean isObstructed;
 
     public MarsRover(MapSetup mapSetup) {
         this.navigator = new Radar(mapSetup.getInitialHeading());
@@ -22,27 +21,18 @@ public class MarsRover {
 
             turnTo(command);
         }
-        return positionToString();
+        return calculatePosition();
     }
 
     private void move(Compass heading) {
-        var newPosition = thrusters.engage(currentPosition, heading);
-        isObstructed = newPosition.equals(currentPosition);
-        currentPosition = newPosition;
+        currentPosition = thrusters.engage(currentPosition, heading);
     }
 
     private void turnTo(char direction) {
         navigator.turn(direction);
     }
 
-    private String positionToString() {
-        return isObstructed
-            ? "O:" + calculatePosition()
-            : calculatePosition();
-    }
-
     private String calculatePosition() {
         return currentPosition.toString() + ":" + navigator.getHeading();
-        // What if an obstacled grid point was just a grid point? then you could just return toString and it just does it
     }
 }

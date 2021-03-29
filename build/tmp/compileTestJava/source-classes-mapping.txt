@@ -1,8 +1,8 @@
 com/codurance/marsrover/DirectionFinderShould.java
  com.codurance.marsrover.DirectionFinderShould
+com/codurance/marsrover/RoverShould.java
+ com.codurance.marsrover.RoverShould
 com/codurance/marsrover/NavigatorShould.java
  com.codurance.marsrover.NavigatorShould
 com/codurance/marsrover/ThrustersShould.java
  com.codurance.marsrover.ThrustersShould
-com/codurance/marsrover/RoverShould.java
- com.codurance.marsrover.RoverShould

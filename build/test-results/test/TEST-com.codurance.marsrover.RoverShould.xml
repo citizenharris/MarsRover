@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.codurance.marsrover.RoverShould" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-27T20:41:58" hostname="codurances-MacBook-Pro.local" time="0.143">
+<testsuite name="com.codurance.marsrover.RoverShould" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-03-29T10:30:03" hostname="codurances-MacBook-Pro.local" time="0.139">
   <properties/>
-  <testcase name="follow_a_complicated_route()" classname="com.codurance.marsrover.RoverShould" time="0.143"/>
+  <testcase name="[1] O:0:3:N, MMMM" classname="com.codurance.marsrover.RoverShould" time="0.104"/>
+  <testcase name="[2] O:2:0:E, RMMM" classname="com.codurance.marsrover.RoverShould" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -43,7 +43,7 @@ class CombustionEngine implements PropulsionEngine {
 
     private GridPoint hasObstacle(GridPoint currentPosition, GridPoint intendedPosition) {
         return obstacles.contains(intendedPosition)
-                ? currentPosition // obstacled grid point here
+                ? new Obstacle(currentPosition)
                 : intendedPosition;
     }
 
